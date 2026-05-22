@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="main">
+    <div class="loading">
+      <!-- From Uiverse.io by andrew-manzyk -->
+      <div class="loader">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <defs>
+            <mask id="clipping">
+              <polygon points="0,0 100,0 100,100 0,100" fill="black"></polygon>
+              <polygon points="25,25 75,25 50,75" fill="white"></polygon>
+              <polygon points="50,25 75,75 25,75" fill="white"></polygon>
+              <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+              <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+              <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+              <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+            </mask>
+          </defs>
+        </svg>
+        <div class="box"></div>
+      </div>
+    </div>
+    <header class="pt-[20px] pb-[20px] sticky">
+      <div class="container max-w-[1128px] mx-auto">
+        <div class="items-center">
+          <div class="flex justify-between items-center">
+            <ul class="links flex gap-[24px]" style="color: #999999">
+              
+              <li class="link"><a href="../pages/vakansi.html">Вакансии</a></li>
+              <li class="link"><a href="../pages/rezuymi.html">Резюме</a></li>
+              <li class="link"><a href="../pages/uslugi.html">Цены и услуги</a></li>
+            </ul>.
+            <div class="flex items-center gap-[5px] title__title">
+              <img src="../images/carbon_laptop.svg" alt="" />
+              <a href="../index.html"><h1 class="title__title font-[500] text-[26px]">Homester.pro</h1></a>
+            </div>
+
+            <ul class="flex items-center gap-[25px] qilib">
+              
+              <li class="link flex gap-[7px]" style="color: #ff4a96">
+                <img src="../images/Group 31 (1).svg" alt="" />Разместить <br />
+                
+              </li>
+              <li class="link flex" style="color: #ff4a96">
+               <a href="../pages/vakansi.html" class="flex"> <img src="../images/Group 31 (1).svg" alt="" />Вакансия</a>
+              </li>
+              <li class="link">
+                <a href="./razmestit.html"
+                  ><button
+                    style="color: #133f42"
+                    class="rounded-[5px] btn-0 bg-[floralwhite] p-[8px] border-[ 1px solid black]"
+                  >
+                       men haqimda
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- drawer init and show -->
+          <div class="text-center max-[370px]:hidden min-[590px]:hidden">
+            <button
+              style="background-color: #ff4a96"
+              class="text-[white] rounded-[10px] inline-flex items-center justify-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+              type="button"
+              data-drawer-target="drawer-navigation"
+              data-drawer-show="drawer-navigation"
+              aria-controls="drawer-navigation"
+            >
+              Show navigation
+            </button>
+          </div>
+
+          <!-- drawer component -->
+          <div
+            id="drawer-navigation"
+            class="backdrop-blur-[20px] bg-[black]/30 text-[white] fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
+            tabindex="-1"
+            aria-labelledby="drawer-navigation-label"
+          >
+            <div class="border-b border-default pb-4 flex items-center">
+              <a
+                href="https://flowbite.com/"
+                class="flex items-center space-x-2 rtl:space-x-reverse"
+              >
+                <span
+                  class="self-center text-lg font-semibold whitespace-nowrap text-heading"
+                  >drawer</span
+                >
+              </a>
+              <button
+                type="button"
+                data-drawer-hide="drawer-navigation"
+                aria-controls="drawer-navigation"
+                class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                </svg>
+                <span class="sr-only">Close menu</span>
+              </button>
+            </div>
+            <div class="py-5 overflow-y-auto">
+              <ul class="space-y-2 font-medium">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  >
+                    <svg
+                      class="w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6.025A7.5 7.5 0 1 0 17.975 14H10V6.025Z"
+                      />
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13.5 3c-.169 0-.334.014-.5.025V11h7.975c.011-.166.025-.331.025-.5A7.5 7.5 0 0 0 13.5 3Z"
+                      />
+                    </svg>
+                    <span class="ms-3">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="flex items-center w-full justify-between px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                    aria-controls="dropdown-example"
+                    data-collapse-toggle="dropdown-example"
+                  >
+                    <svg
+                      class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+                      />
+                    </svg>
+                    <span
+                      class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                      >E-commerce</span
+                    >
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m19 9-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                        >Products</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                        >Billing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                        >Invoice</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  >
+                    <svg
+                      class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 5v14M9 5v14M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+                      />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+                    <span
+                      class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded-sm"
+                      >Pro</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  >
+                    <svg
+                      class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 13h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H20M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M4 13l2-9h12l2 9M9 7h6m-7 3h8"
+                      />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+                    <span
+                      class="inline-flex items-center justify-center w-4.5 h-4.5 ms-2 text-xs font-medium text-fg-danger-strong bg-danger-soft border border-danger-subtle rounded-full"
+                      >2</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  >
+                    <svg
+                      class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  >
+                    <svg
+                      class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"
+                      />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  >
+                    <svg
+                      class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-fg-brand"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"
+                      />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+   <main style="background-color: #f8f8f8;" class="bg-[]">
+    <section>
+        <div class="conatiner max-w-[1128px] mx-auto">
+            <div>
+               
+
+<div class="mb-4 ">
+    <ul class="flex  man -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-base" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Все вакансии </div></button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Оператор
+se</div></button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Оператор
+поддержки</div></button>
+        </li>
+        <li role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Персональный
+ассистент</div></button>
+        </li>
+         <li role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">  <div data-modal-target="static-modal" data-modal-toggle="static-modal" class=" bg-[white] rounded-[4px]   text-[black] bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-7.5 focus:outline-none" type="button">
+royhatang oting
+</div></button>
+        </li>
+      
+    </ul>
+</div>
+<div id="default-tab-content">
+    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+       <!--  -->
+       <section>
+        <div>
+          <div
+            style="background-color: #fff"
+            class="max-w-[1128px] mx-auto container h-[100px] rounded-[4px]"
+          >
+            <div class="items-center">
+              <div class="flex items-center art">
+                <div
+                  style="background-color: #f8f8f8"
+                  class="items-center flex mt-[30px] ml-[20px] rounded-[4px] w-[730px] h-[48px] ey"
+                >
+                  <img
+                    src="../images/Vector (15).svg"
+                    alt=""
+                    class="ml-[20px] align-center w-[20px] h-[40px]"
+                  />
+                  <input
+                    style="background-color: #f8f8f8"
+                    type="text"
+                    placeholder="Поиск по вакансиям"
+                    class="ey items-center rounded-[4px] w-[774px] border-hidden mt-[15px] h-[30px]"
+                  />
+                </div>
+                <div>
+                  <div class="flex fa">
+                    <button
+                      style="background-color: #ff4a95a9"
+                      class="font-[400] text-[15px] mt-[27px] ml-[20px] text-[white] rounded-[4px] w-[148px] h-[48px]"
+                    >
+                      <p style="color: #fcfcfc" class="">Все вакансии</p>
+                    </button>
+                    <button
+                      style="background-color: #cac0c4a9"
+                      class="font-[400] text-[15px] mt-[27px] ml-[20px] text-[white] rounded-[4px] w-[148px] h-[48px]"
+                    >
+                      <p style="color: #2c2a2a" class="">Все резюме</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+          <br /><br />
+          <br />
+          <br />
+        </div>
+      </section>
+<!--  -->
+<!--  -->
+<div class="card flex grid grid-cols-2 gap-[24px]">
+   
+     <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
+для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ </p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">155-300 000 ₽ </p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+      <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
+для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+       <div class="card flex grid grid-cols-2 gap-[24px]">
+    <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+     <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
+для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ </p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+     <div class="card flex grid grid-cols-2 gap-[24px]">
+   <a href="./razmestit.html">
+     <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <a href="./razmestit.html"><img src="../images/image 36.jpg" alt="" class="ml-[70px]"></a></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div></a>
+     <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
+для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ </p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">155-300 000 ₽ </p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+      <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
+для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+        <div>
+            <div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px]"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
+<p class="my-[10px]">Мы в поисках менеджера по продажам.
+ Что Вы будете делать:
+Поиск  <br>и работа с потенциальными клиентами, установление...</p>
+<br>
+<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+      <section>
+      <div class="container max-w-[1128px] mx-auto">
+        <h1 class="font-[500] text-[27px] text-center mb-[100px] mt-[50px]">
+          Помогаем строить удаленные отделы
+        </h1>
+        <div>
+          <div class="flex grid grid-cols-3 gap-[24px]">
+            <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Видео-собеседование</h1>
+<p class="mt-[20px]">490 руб.</p>
+<p class="mt-[20px]">Регламенты и инструкции для создания  <br>удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Аудит вакансии</h1>
+<p class="mt-[20px]">990 руб.</p>
+<p class="mt-[20px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для  <br>новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Удаленный отдел под ключ</h1>
+<p class="mt-[10px]">от 499 000 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+             <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[15px] mt-[10px] title">Шаблоны документов <br>
+«Удаленка»</h1>
+<p class="mt-[10px]">490 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для  <br>создания удаленных отделов. Незаменимо для  <br>новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+             <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Обучающий курс</h1>
+<p class="mt-[10px]"> 990 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+               <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Корпоративный тренинг <br>
+«Убойная удаленка»</h1>
+<p class="mt-[10px]"> от 499 000 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+</div>
+
+          
+            </div>
+        </div>
+    </section>
+  <section class="pb-[100px]">
+      <div class="container max-w-[1128px] mx-auto">
+        <h1 class="font-[500] text-[27px] title text-center mb-[100px] mt-[50px]">
+          Помогаем строить удаленные отделы
+        </h1>
+        <div>
+          <div class="flex grid grid-cols-3 gap-[24px] man ">
+            <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Видео-собеседование</h1>
+<p class="mt-[20px]">490 руб.</p>
+<p class="mt-[20px]">Регламенты и инструкции для создания  <br>удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Аудит вакансии</h1>
+<p class="mt-[20px]">990 руб.</p>
+<p class="mt-[20px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для  <br>новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Удаленный отдел под ключ</h1>
+<p class="mt-[10px]">от 499 000 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+             <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[15px] mt-[10px] title">Шаблоны документов <br>
+«Удаленка»</h1>
+<p class="mt-[10px]">490 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для  <br>создания удаленных отделов. Незаменимо для  <br>новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+             <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Обучающий курс</h1>
+<p class="mt-[10px]"> 990 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+               <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+              <div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Корпоративный тренинг <br>
+«Убойная удаленка»</h1>
+<p class="mt-[10px]"> от 499 000 руб.</p>
+<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <p class="text-center">© 2014-2021 homester.pro — сервис для подбора удаленных сотрудников</p>
+   </main>
+  
+
+<!-- Modal toggle -->
+
+
+<!-- Main modal -->
+<div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class=" backdrop-blur-[30px] bg-[Pink]/20 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between border-b border-default pb-4 md:pb-5">
+               
+                <button type="button" class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="static-modal">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="space-y-4 md:space-y-6 py-4 md:py-6">
+<!--  -->
+                
+<form>
+    <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+            <label for="first_name" class="block mb-2.5 text-sm font-medium text-heading">First name</label>
+            <input type="text" id="first_name" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="John" required />
+        </div>
+        <div>
+            <label for="last_name" class="block mb-2.5 text-sm font-medium text-heading">Last name</label>
+            <input type="text" id="last_name" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Doe" required />
+        </div>
+        <div>
+            <label for="company" class="block mb-2.5 text-sm font-medium text-heading">Company</label>
+            <input type="text" id="company" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="ishtoptik" required />
+        </div>  
+        <div>
+            <label for="phone" class="block mb-2.5 text-sm font-medium text-heading">Phone number</label>
+            <input type="tel" id="phone" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+        </div>
+        <div>
+            <label for="website" class="block mb-2.5 text-sm font-medium text-heading">Website URL</label>
+            <input type="url" id="website" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="ishtobtik.com" required />
+        </div>
+        <div>
+            <label for="visitors" class="block mb-2.5 text-sm font-medium text-heading">Unique visitors (per month)</label>
+            <input type="number" id="visitors" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="" required />
+        </div>
+    </div>
+    <div class="mb-6">
+        <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Email address</label>
+        <input type="email" id="email" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="john.doe@company.com" required />
+    </div> 
+    <div class="mb-6">
+        <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Password</label>
+        <input type="password" id="password" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
+    </div> 
+    <div class="mb-6">
+        <label for="confirm_password" class="block mb-2.5 text-sm font-medium text-heading">Confirm password</label>
+        <input type="password" id="confirm_password" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
+    </div> 
+    <div class="flex items-start mb-6">
+        <div class="flex items-center h-5">
+        <input id="remember" type="checkbox" value="" class=" rounded-[4px] w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
+        </div>
+        <label for="remember" class="ms-2 text-sm font-medium text-heading">I agree with the <a href="#" class="text-fg-brand hover:underline">terms and conditions</a>.</label>
+    </div>
+    <button type="submit" class=" rounded-[4px] bg-[blue] text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Submit</button>
+</form>
+
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5">
+                <button data-modal-hide="static-modal" type="button" class=" bg-[blue]  rounded-[5px] bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">I accept</button>
+                <button data-modal-hide="static-modal" type="button" class="  bg-[black]  rounded-[5px] text-[white] bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     
+  </body>
+</html>
