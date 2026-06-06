@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body class="main">
+  <body class="">
     <div class="loading">
       <!-- From Uiverse.io by andrew-manzyk -->
       <div class="loader">
@@ -33,16 +33,16 @@
         <div class="box"></div>
       </div>
     </div>
-    <header class="pt-[20px] pb-[20px] sticky">
+    <header class="pt-[20px] pb-[20px] sticky"  >
       <div class="container max-w-[1128px] mx-auto">
         <div class="items-center">
           <div class="flex justify-between items-center">
-            <ul class="links flex gap-[24px]" style="color: #999999">
-              
-              <li class="link"><a href="../pages/vakansi.html">Вакансии</a></li>
-              <li class="link"><a href="../pages/rezuymi.html">Резюме</a></li>
-              <li class="link"><a href="../pages/uslugi.html">Цены и услуги</a></li>
-            </ul>.
+            <ul  class="links flex gap-[24px]" style="color: #999999">
+            
+              <li class="link"><a href="../pages/vakansi.html">Bo'sh ish o'rinlari</a></li>
+              <li class="link"><a href="../pages/rezuymi.html">qayta boshlash</a></li>
+              <li class="link"><a href="../pages/homester.html">Narxlar va xizmatlar</a></li>
+            </ul>
             <div class="flex items-center gap-[5px] title__title">
               <img src="../images/carbon_laptop.svg" alt="" />
               <a href="../index.html"><h1 class="title__title font-[500] text-[26px]">Homester.pro</h1></a>
@@ -50,23 +50,24 @@
 
             <ul class="flex items-center gap-[25px] qilib">
               
-              <li class="link flex gap-[7px]" style="color: #ff4a96">
-                <img src="../images/Group 31 (1).svg" alt="" />Разместить <br />
+            <a href="../pages/razmeztittt.html">  <li class="link flex gap-[7px]" style="color: #ff4a96">
+                <img src="../images/Group 31 (1).svg" alt="" />joy<br />
                 
-              </li>
-              <li class="link flex" style="color: #ff4a96">
-               <a href="../pages/vakansi.html" class="flex"> <img src="../images/Group 31 (1).svg" alt="" />Вакансия</a>
-              </li>
+              </li></a>
+              <a href="../pages/bakansiii.html" class="link"><li class="link flex" style="color: #ff4a96">
+                <img src="../images/Group 31 (1).svg" alt="" />Bo'sh ish o'rni
+              </li></a>
               <li class="link">
-                <a href="./razmestit.html"
+                <a href="./kirish.html"
                   ><button
                     style="color: #133f42"
                     class="rounded-[5px] btn-0 bg-[floralwhite] p-[8px] border-[ 1px solid black]"
                   >
-                       men haqimda
+                     Kirish 
                   </button></a
                 >
               </li>
+              
             </ul>
           </div>
 
@@ -80,7 +81,7 @@
               data-drawer-show="drawer-navigation"
               aria-controls="drawer-navigation"
             >
-              Show navigation
+              Navigatsiyani ko'rsatish
             </button>
           </div>
 
@@ -98,7 +99,7 @@
               >
                 <span
                   class="self-center text-lg font-semibold whitespace-nowrap text-heading"
-                  >drawer</span
+                  >tortma</span
                 >
               </a>
               <button
@@ -124,7 +125,7 @@
                     d="M6 18 17.94 6M18 18 6.06 6"
                   />
                 </svg>
-                <span class="sr-only">Close menu</span>
+                <span class="sr-only">Menyuni yopish</span>
               </button>
             </div>
             <div class="py-5 overflow-y-auto">
@@ -376,338 +377,156 @@
             <div>
                
 
-<div class="mb-4 ">
-    <ul class="flex  man -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-base" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Все вакансии </div></button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Оператор
+<div class="mb-4">
+<ul class="flex man -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+<li class="me-2" role="presentation">
+<button class="inline-block p-4 border-b-2 rounded-t-base" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Barcha bo'sh ish o'rinlari </div></button>
+</li>
+<li class="me-2" role="presentation">
+<button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Operator
 se</div></button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Оператор
-поддержки</div></button>
-        </li>
-        <li role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Персональный
-ассистент</div></button>
-        </li>
-         <li role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">  <div data-modal-target="static-modal" data-modal-toggle="static-modal" class=" bg-[white] rounded-[4px]   text-[black] bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-7.5 focus:outline-none" type="button">
-royhatang oting
-</div></button>
-        </li>
-      
-    </ul>
+</li>
+<li class="me-2" role="presentation">
+<button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Operator
+support</div></button>
+</li>
+<li role="presentation">
+<button class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false"><div class="btn-333 p-[30px] bg-[white] rounded-[4px] text-[black]">Shaxsiy
+yordamchi</div></button>
+</li>
+
+</ul>
 </div>
 <div id="default-tab-content">
     <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-       <!--  -->
-       <section>
-        <div>
-          <div
-            style="background-color: #fff"
-            class="max-w-[1128px] mx-auto container h-[100px] rounded-[4px]"
-          >
-            <div class="items-center">
-              <div class="flex items-center art">
-                <div
-                  style="background-color: #f8f8f8"
-                  class="items-center flex mt-[30px] ml-[20px] rounded-[4px] w-[730px] h-[48px] ey"
-                >
-                  <img
-                    src="../images/Vector (15).svg"
-                    alt=""
-                    class="ml-[20px] align-center w-[20px] h-[40px]"
-                  />
-                  <input
-                    style="background-color: #f8f8f8"
-                    type="text"
-                    placeholder="Поиск по вакансиям"
-                    class="ey items-center rounded-[4px] w-[774px] border-hidden mt-[15px] h-[30px]"
-                  />
-                </div>
-                <div>
-                  <div class="flex fa">
-                    <button
-                      style="background-color: #ff4a95a9"
-                      class="font-[400] text-[15px] mt-[27px] ml-[20px] text-[white] rounded-[4px] w-[148px] h-[48px]"
-                    >
-                      <p style="color: #fcfcfc" class="">Все вакансии</p>
-                    </button>
-                    <button
-                      style="background-color: #cac0c4a9"
-                      class="font-[400] text-[15px] mt-[27px] ml-[20px] text-[white] rounded-[4px] w-[148px] h-[48px]"
-                    >
-                      <p style="color: #2c2a2a" class="">Все резюме</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <br /><br />
-          <br />
-          <br />
-        </div>
-      </section>
-<!--  -->
-<!--  -->
-<div class="card flex grid grid-cols-2 gap-[24px]">
+      
    
-     <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
-для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
+<!-- -->
+<section class="shoh">
+<div>
+<div
 
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ </p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра</h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">155-300 000 ₽ </p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-      <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Разработчик мобильных приложений
-для специальных платформ<img src="../images/image 28.svg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20 000 ₽ - 30 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
+class="JAHON max-w-[1128px] mx-auto container h-[100px] rounded-[4px]"
+>
+<div class="bg-white p-4 md:p-6 rounded-lg shadow">
+<div class="flex flex-col lg:flex-row gap-4">
 
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
-       <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
-        <div>
-            <div class="pt-[30px] ml-[20px]">
-<h2 class="text-[24px] font-[900] flex">Сотрудник сall-центра <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
-<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150 000 ₽ - 300 000 ₽</p>
-<p class="my-[10px]">Мы в поисках менеджера по продажам.
- Что Вы будете делать:
-Поиск  <br>и работа с потенциальными клиентами, установление...</p>
-<br>
-<p style="color: #999999;" class="flex mt-[10px]" >Рога и Копыта <p style="color: #999999;">без опыта</p></p>
-            </div>
-        </div>
-    </div>
+<!-- Input -->
+<input
+type="text"
+placeholder="Bo'sh ish o'rinlarini qidirish"
+class="flex-1 h-14 px-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-pink-400"
+/>
+
+<!-- Buttons -->
+<div class="flex flex-col sm:flex-row gap-3">
+<button
+class="h-14 px-6 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition"
+>
+Barcha bo'sh ish o'rinlari
+</button>
+
+<button
+class="h-14 px-6 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition"
+>
+Barcha rezyumelar
+</button>
+</div>
+
+</div>
+
 </div>
 </div>
+<br /><br />
+<br /><br />
+<br />
+<br />
+</div>
+</section>
+<!-- -->
+<!-- -->
+<div class="card flex grid grid-cols-2 gap-[24px]">
+
+<div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+<div>
+<div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Mobil ilovalar ishlab chiqaruvchisi
+ixtisoslashgan platformalar uchun<img src="../images/image 28.svg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20,000 ₽ - 30,000 ₽</p>
+<p class="my-[10px]">Biz Savdo menejeri qidirmoqdamiz.
+Siz nima qilasiz:
+Potentsial mijozlarni toping va ular bilan ishlang,... ni o'rnating</p>
+<br>
+
+</div>
+</div>
+</div>
+<div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+<div>
+<div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Qo'ng'iroqlar markazi xodimi</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20,000 ₽ </p>
+<p class="my-[10px]">Biz Savdo menejeri qidirmoqdamiz.
+Siz nima qilasiz:
+Potentsial mijozlarni toping va ular bilan ishlang,... ni o'rnating</p>
+<br>
+
+</div>
+</div>
+</div>
+<div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+<div>
+<div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Qo'ng'iroqlar markazi xodimi</h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">155-300,000 ₽ </p>
+<p class="my-[10px]">Biz savdo menejeri qidirmoqdamiz.
+Siz nima qilasiz:
+Potentsial mijozlarni topish va ular bilan ishlash,... ni o'rnatish</p>
+<br>
+
+</div>
+</div>
+</div>
+<div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+<div>
+<div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Mobil ilovalar ishlab chiqaruvchisi
+ixtisoslashgan platformalar uchun<img src="../images/image 28.svg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">20,000 ₽ - 30,000 ₽</p>
+<p class="my-[10px]">Biz Savdo Menejeri qidirmoqdamiz.
+Siz nima qilasiz:
+Potentsial mijozlarni topish va ular bilan ishlash,... ni o'rnatish</p>
+<br>
+
+</div>
+</div>
+</div>
+<div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+<div>
+<div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Qo'ng'iroqlar markazi xodimi <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150,000 ₽ - 300,000 ₽</p>
+<p class="my-[10px]">Biz Savdo menejeri qidirmoqdamiz.
+Siz nima qilasiz:
+Potentsial mijozlarni topish va ular bilan ishlash,...</p>
+<br>
+
+</div>
+</div>
+</div>
+<div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
+<div>
+<div class="pt-[30px] ml-[20px]">
+<h2 class="text-[24px] font-[900] flex">Qo'ng'iroqlar markazi xodimi <img src="../images/image 36.jpg" alt="" class="ml-[70px] hyt"></h2>
+<p style="color: #ff4a96;" class="text-[15px] font-[Rubik] mt-[10px]">150,000 ₽ - 300,000 ₽</p>
+<p class="my-[10px]">Biz Savdo Menejeri qidirmoqdamiz.
+Siz nima qilasiz:
+Potentsial mijozlarni toping va ular bilan ishlang,... ni o'rnating</p>
+<br>
+
+</div>
+</div>
+<div class="ca">
     <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
        <div class="card flex grid grid-cols-2 gap-[24px]">
     <div class="cart max-w-[552px] h-[248px] rounded-[4px] bg-[white]">
@@ -988,44 +807,18 @@ royhatang oting
             </div>
         </div>
     </section>
-  <section class="pb-[100px]">
+   <section>
       <div class="container max-w-[1128px] mx-auto">
         <h1 class="font-[500] text-[27px] title text-center mb-[100px] mt-[50px]">
-          Помогаем строить удаленные отделы
+         Biz masofaviy bo'limlarni yaratishda yordam beramiz
         </h1>
         <div>
           <div class="flex grid grid-cols-3 gap-[24px] man ">
             <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
               <div class="ml-[40px] pt-[25px]">
-<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Видео-собеседование</h1>
-<p class="mt-[20px]">490 руб.</p>
-<p class="mt-[20px]">Регламенты и инструкции для создания  <br>удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-            </div>
-              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
-              <div class="ml-[40px] pt-[25px]">
-<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Аудит вакансии</h1>
-<p class="mt-[20px]">990 руб.</p>
-<p class="mt-[20px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для  <br>новичков в удалёнке и в малом бизнесе</p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-            </div>
-              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
-              <div class="ml-[40px] pt-[25px]">
-<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Удаленный отдел под ключ</h1>
-<p class="mt-[10px]">от 499 000 руб.</p>
-<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Video intervyu</h1>
+<p class="mt-[20px]">490 rubl.</p>
+<p class="mt-[20px]">Masofaviy bo'limlarni yaratish bo'yicha qoidalar va ko'rsatmalar. Masofaviy ishda yangi boshlovchilar va kichik biznes </p>
               </div>
               <br>
               <br>
@@ -1035,12 +828,42 @@ royhatang oting
               <br>
             </div>
              <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
-              <div class="ml-[40px] pt-[25px]">
-<h1 style="color: #ff4a96;" class="font-[900] text-[15px] mt-[10px] title">Шаблоны документов <br>
-«Удаленка»</h1>
-<p class="mt-[10px]">490 руб.</p>
-<p class="mt-[10px]">Регламенты и инструкции для  <br>создания удаленных отделов. Незаменимо для  <br>новичков в удалёнке и в малом бизнесе</p>
-              </div>
+<div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[20px] title">Bo'sh ish o'rinlari auditi</h1>
+<p class="mt-[20px]">990 rubl.</p>
+<p class="mt-[20px]">Masofaviy bo'limlarni yaratish bo'yicha qoidalar va ko'rsatmalar. Masofaviy ishda yangi boshlovchilar va kichik biznes </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+<div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Tayyor Masofaviy bo'lim</h1>
+<p class="mt-[10px]">499 000 rubldan.</p>
+<p class="mt-[10px]">Masofaviy bo'limlarni yaratish bo'yicha qoidalar va ko'rsatmalar. Masofaviy ishda yangi boshlovchilar va kichik biznes uchun ajralmas hisoblanadi.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+<div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[15px] mt-[10px] title">Hujjat shablonlari <br>
+"Masofaviy ish"</h1>
+<p class="mt-[10px]">490 rubl.</p>
+<p class="mt-[10px]">Masofaviy bo'limlarni yaratish bo'yicha qoidalar va ko'rsatmalar. Masofaviy ishga yangi kelganlar va kichik biznes </p>
+</div>
               <br>
               <br>
               <br>
@@ -1048,124 +871,122 @@ royhatang oting
               <br>
               <br>
             </div>
-             <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
-              <div class="ml-[40px] pt-[25px]">
-<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Обучающий курс</h1>
-<p class="mt-[10px]"> 990 руб.</p>
-<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-            </div>
-               <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
-              <div class="ml-[40px] pt-[25px]">
-<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Корпоративный тренинг <br>
-«Убойная удаленка»</h1>
-<p class="mt-[10px]"> от 499 000 руб.</p>
-<p class="mt-[10px]">Регламенты и инструкции для создания <br> удаленных отделов. Незаменимо для <br> новичков в удалёнке и в малом бизнесе</p>
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-            </div>
+            <div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+<div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">O'quv kursi</h1>
+<p class="mt-[10px]"> 990 rubl.</p>
+<p class="mt-[10px]">Masofaviy bo'limlarni yaratish bo'yicha qoidalar va ko'rsatmalar. Masofaviy ish va kichik biznesga yangi kelganlar uchun ajralmas.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="max-w-[390px] h-[240px] rounded-[4px] bg-[white] shad">
+<div class="ml-[40px] pt-[25px]">
+<h1 style="color: #ff4a96;" class="font-[900] text-[25px] mt-[10px] title">Korporativ trening<br>
+"Qobil masofaviy ish"</h1>
+<p class="mt-[10px]"> 499 000 rubldan.</p>
+<p class="mt-[10px]">Masofaviy bo'limlarni yaratish bo'yicha qoidalar va ko'rsatmalar. Masofaviy ishga yangi kelganlar va kichik biznes </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
           </div>
         </div>
       </div>
     </section>
-   <p class="text-center">© 2014-2021 homester.pro — сервис для подбора удаленных сотрудников</p>
+
+<div class="bg-gray-50">
+
+
+
+<!-- HERO -->
+<section class="text-center py-16 bg-pink-50">
+  <h2 class="text-3xl font-bold">Ish topish eng tez platforma</h2>
+  <p class="text-gray-600 mt-2">Masofaviy va ofis ishlar</p>
+
+  <div class="mt-6 flex justify-center">
+    <input id="search"
+      class="w-80 p-3 border rounded-l-lg"
+      placeholder="Ish qidirish..." />
+
+    <button onclick="searchJob()"
+      class="bg-pink-500 text-white px-5 rounded-r-lg">
+      Qidirish
+    </button>
+  </div>
+</section>
+
+<!-- JOB LIST -->
+<section class="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-5" id="jobs">
+
+<div class="bg-white p-5 rounded-xl shadow">
+<h3 class="font-bold">Frontend dasturchisi</h3>
+<p class="text-gray-500">8 000 000 so‘m</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl shadow">
+<h3 class="font-bold">Qo‘ng‘iroqlar markazi operatori</h3>
+<p class="text-gray-500">4 000 000 so‘m</p>
+</div>
+
+<div class="bg-white p-5 rounded-xl shadow">
+<h3 class="font-bold">UX/UI dizayneri</h3>
+<p class="text-gray-500">7 500 000 so‘m</p>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center p-6 text-gray-500">
+  © JobFinder - Index sahifa
+</footer>
+
+<!-- JS -->
+
+
+</div>
+ <p class="text-center">© 2014-2021 homester.pro — masofaviy xodimlarni yollash xizmati</p>
    </main>
   
 
 <!-- Modal toggle -->
 
 
-<!-- Main modal -->
-<div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class=" backdrop-blur-[30px] bg-[Pink]/20 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-2xl max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
-            <!-- Modal header -->
-            <div class="flex items-center justify-between border-b border-default pb-4 md:pb-5">
-               
-                <button type="button" class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="static-modal">
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-            </div>
-            <!-- Modal body -->
-            <div class="space-y-4 md:space-y-6 py-4 md:py-6">
-<!--  -->
-                
-<form>
-    <div class="grid gap-6 mb-6 md:grid-cols-2">
-        <div>
-            <label for="first_name" class="block mb-2.5 text-sm font-medium text-heading">First name</label>
-            <input type="text" id="first_name" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="John" required />
-        </div>
-        <div>
-            <label for="last_name" class="block mb-2.5 text-sm font-medium text-heading">Last name</label>
-            <input type="text" id="last_name" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Doe" required />
-        </div>
-        <div>
-            <label for="company" class="block mb-2.5 text-sm font-medium text-heading">Company</label>
-            <input type="text" id="company" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="ishtoptik" required />
-        </div>  
-        <div>
-            <label for="phone" class="block mb-2.5 text-sm font-medium text-heading">Phone number</label>
-            <input type="tel" id="phone" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
-        </div>
-        <div>
-            <label for="website" class="block mb-2.5 text-sm font-medium text-heading">Website URL</label>
-            <input type="url" id="website" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="ishtobtik.com" required />
-        </div>
-        <div>
-            <label for="visitors" class="block mb-2.5 text-sm font-medium text-heading">Unique visitors (per month)</label>
-            <input type="number" id="visitors" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="" required />
-        </div>
-    </div>
-    <div class="mb-6">
-        <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Email address</label>
-        <input type="email" id="email" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="john.doe@company.com" required />
-    </div> 
-    <div class="mb-6">
-        <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Password</label>
-        <input type="password" id="password" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
-    </div> 
-    <div class="mb-6">
-        <label for="confirm_password" class="block mb-2.5 text-sm font-medium text-heading">Confirm password</label>
-        <input type="password" id="confirm_password" class=" rounded-[4px] bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
-    </div> 
-    <div class="flex items-start mb-6">
-        <div class="flex items-center h-5">
-        <input id="remember" type="checkbox" value="" class=" rounded-[4px] w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" required />
-        </div>
-        <label for="remember" class="ms-2 text-sm font-medium text-heading">I agree with the <a href="#" class="text-fg-brand hover:underline">terms and conditions</a>.</label>
-    </div>
-    <button type="submit" class=" rounded-[4px] bg-[blue] text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Submit</button>
-</form>
 
-            </div>
-            <!-- Modal footer -->
-            <div class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5">
-                <button data-modal-hide="static-modal" type="button" class=" bg-[blue]  rounded-[5px] bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">I accept</button>
-                <button data-modal-hide="static-modal" type="button" class="  bg-[black]  rounded-[5px] text-[white] bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Decline</button>
-            </div>
-        </div>
-    </div>
-</div>
+  <script>
+    function toggleInputs() {
+      document.getElementById("inputsBox").classList.toggle("hidden");
+    }
+  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-     
+     <script>
+function searchJob() {
+  let input = document.getElementById("search").value.toLowerCase();
+  let jobs = document.querySelectorAll("#jobs div");
+
+  jobs.forEach(job => {
+    let text = job.innerText.toLowerCase();
+    job.style.display = text.includes(input) ? "block" : "none";
+  });
+}
+</script>
+
   </body>
 </html>
