@@ -8,3 +8,4 @@
 # sardor-2-loyiha
 # sardor-2-loyiha
 # loyiha-sardorrr-2
+# loyiha-2-chi-sardor
