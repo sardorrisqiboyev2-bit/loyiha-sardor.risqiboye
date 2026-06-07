@@ -6,3 +6,4 @@
 # loyiha-2-sardor-2
 # loyiha-sardor.risqiboyev-2-2-3
 # sardor-2-loyiha
+# sardor-2-loyiha
